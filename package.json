@@ -1,0 +1,22 @@
+{
+  "name": "whtsapp-web",
+  "version": "1.0.0",
+  "description": "• Enlace del tutorial -> https://www.youtube.com/watch?v=A_Xu0OR_HkE\r • Documentacion -> https://wwebjs.dev/guide/#installation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^1.0.4",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {}
+}

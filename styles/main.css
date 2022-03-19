@@ -1,0 +1,345 @@
+body,
+html {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+:root {
+  --negro: rgb(49, 49, 49);
+  --sombra: -1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  background-color: var(--negro);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.qrContainer {
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  /* position: absolute; */
+  background-color: red;
+  color: black;
+}
+
+.items-nav {
+  display: flex;
+}
+
+.items-nav > div {
+  margin-right: 25px;
+}
+
+.nav p {
+  margin: 0;
+  color: white;
+  font-weight: 500;
+}
+
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-form > div {
+  margin-right: 25px;
+}
+
+.form-input {
+  /* background-color: tomato; */
+  min-width: 600px;
+  overflow: hidden;
+}
+
+.form-input textarea {
+  min-width: 600px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-input button {
+  border: none;
+  padding: 10px 15px;
+  background-color: var(--negro);
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.form-input textarea::placeholder {
+  padding: 15px;
+  font-size: 17px;
+}
+
+.form-img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  /* background-color: white; */
+  margin-bottom: 5px;
+  gap: 5px;
+  min-height: 40px;
+}
+
+.form-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.form-img span {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ========================================= */
+
+.contacts-send {
+  display: flex;
+  border-radius: 5px;
+  color: var(--negro);
+  /* background-color: slateblue; */
+}
+
+.form-add-contact {
+  display: flex;
+  position: relative;
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 15px 15px;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  align-items: center;
+  justify-content: center;
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+}
+
+#clickMostrarForm {
+  position: absolute;
+  background-color: blue;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.container-registros {
+}
+
+.form-add-contact h6 {
+  font-size: 13px;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.form-add-contact span {
+  margin: 0;
+  padding: 0;
+}
+
+.max-registros {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+}
+
+.max-registrosHidde {
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  flex-grow: 1;
+  max-height: 458px;
+}
+
+.max-registros::-webkit-scrollbar {
+  width: 7px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.max-registros::-webkit-scrollbar-thumb {
+  background: rgb(175, 175, 175);
+  border-radius: 4px;
+}
+
+.max-registros::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+.max-registros::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.max-registros::-webkit-scrollbar-track {
+  background: rgb(241, 241, 241);
+  /* width: 15px !important; */
+}
+
+.contacts-send table {
+  text-align: center;
+  border-spacing: 0;
+}
+
+.tableContactosOcultos {
+  position: relative;
+}
+
+.tableContactosOcultos::before {
+  content: 'Ocultos';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  color: rgb(114, 114, 114);
+  margin: 3px 8px;
+}
+
+table input {
+  /* width: 100%; */
+  /* width: 200px; */
+  padding: 8px 10px;
+  margin: 0;
+  border: none;
+  outline: none;
+  /* background-color: tomato; */
+  margin: 0 100px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+}
+
+table input::placeholder {
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(177, 177, 177);
+}
+
+table h6 {
+  margin: 0;
+  font-size: 13px;
+}
+
+th {
+  padding-bottom: 10px;
+}
+
+.delete {
+  border-radius: 3px;
+  color: var(--negro);
+}
+
+table a {
+  /* background-color: slateblue; */
+  width: 50px !important;
+  height: 50px !important;
+  text-decoration: none;
+}
+
+.delete span {
+  /* display: inline-block; */
+  border: none;
+  color: rgb(253, 114, 114);
+  font-size: 20px;
+}
+
+.hide span {
+  font-size: 20px;
+  color: rgb(117, 117, 117);
+  border: none;
+}
+
+.hide {
+  font-size: 11px;
+}
+
+td {
+  /* background-color: aqua ; */
+  /* border-bottom: rgb(204, 204, 204) 1px solid; */
+  padding: 5px;
+  font-size: 14px;
+  color: rgb(59, 59, 59);
+}
+
+/* ===============FORMULARIO PARA AÑADIR UN NUEVO REGISTRO =================== */
+.form-add-client {
+  z-index: 2;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.671);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.form-add-client p {
+  margin: 0;
+  margin-bottom: 4px;
+  text-align: center;
+  color: rgb(65, 65, 65);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.form-add-client form {
+  background-color: white;
+  margin: auto;
+  padding: 15px;
+  border-radius: 8px;
+  /* max-width: 300px; */
+  /* width: 100%; */
+}
+
+.form-add-client input {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box; /* Esto es lo que evitara que los inputs se desvorden de su caja */
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.form-add-client input::placeholder {
+  padding: 0 10px;
+  color: rgb(122, 122, 122);
+}
+
+.form-add-client input:focus {
+  outline-color: rgb(189, 189, 189);
+}
+
+.form-add-client button {
+  /* margin-top: 5px; */
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  background-color: var(--negro);
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+#icon-name-contact {
+  background-color: blue;
+}

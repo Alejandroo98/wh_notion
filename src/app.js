@@ -75,8 +75,8 @@ const SESSION_FILE_PATH = path.join(__dirname, './session.json');
 // };
 
 // fs.existsSync(SESSION_FILE_PATH) ? withSession() :
-withOutSession();
+// withOutSession();
 
 module.exports = {
-  sendMessage,
+  //   sendMessage,
 };

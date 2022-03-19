@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const flash = require('connect-flash');
 
-// require('./app');
+require('./app');
 
 app.use(flash());
 app.use(express.urlencoded({ extended: false }));

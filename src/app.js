@@ -8,25 +8,25 @@ let sessionData;
 const SESSION_FILE_PATH = path.join(__dirname, './session.json');
 
 //Cuando ya tienes una sesion creada entrara a esta funcion
-const withSession = async () => {
-  console.log('INICIANDO SESION...');
+// const withSession = async () => {
+//   console.log('INICIANDO SESION...');
 
-  sessionData = require(SESSION_FILE_PATH);
-  client = new Client({
-    session: sessionData,
-  });
+//   sessionData = require(SESSION_FILE_PATH);
+//   client = new Client({
+//     session: sessionData,
+//   });
 
-  client.on('ready', () => {
-    console.log('Client is ready!');
-  });
+//   client.on('ready', () => {
+//     console.log('Client is ready!');
+//   });
 
-  client.on('auth_failure', () => {
-    console.log('ERROR AL CONECTAR, INTENTA DE NUEVO');
-  });
+//   client.on('auth_failure', () => {
+//     console.log('ERROR AL CONECTAR, INTENTA DE NUEVO');
+//   });
 
-  client.initialize();
-  listenMessage();
-};
+//   client.initialize();
+//   listenMessage();
+// };
 
 // Estas fn genere el QR
 const withOutSession = () => {

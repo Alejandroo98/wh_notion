@@ -5,6 +5,17 @@ const path = require('path');
 let client = new Client();
 let sessionData;
 
+client.on('qr', (qr) => {
+  qrcode.generate(qr, { small: true });
+  console.log(qr);
+});
+
+client.on('ready', () => {
+  console.log('Client is ready!');
+});
+
+client.initialize();
+
 const SESSION_FILE_PATH = path.join(__dirname, './session.json');
 
 //Cuando ya tienes una sesion creada entrara a esta funcion

@@ -2,7 +2,7 @@ const qrcode = require('qrcode-terminal');
 const { Client } = require('whatsapp-web.js');
 // const fs = require('fs');
 const path = require('path');
-let client = new Client();
+// let client = new Client();
 let sessionData;
 
 const SESSION_FILE_PATH = path.join(__dirname, './session.json');
